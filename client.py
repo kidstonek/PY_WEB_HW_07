@@ -14,7 +14,7 @@ def clt():
         if data:
             print(f'You received message {data}')
         if data == 'bye':
-            print('Server closed connection by kye work "bye"')
+            print('Server closed connection by key word "bye"')
             break
         client_skt.send(str(input('Your message: ')).encode())
     client_skt.close()

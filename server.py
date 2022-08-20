@@ -24,6 +24,7 @@ def srv():
             conn.send(msg.encode())
     except KeyboardInterrupt:
         print('Connection stopped')
+        conn.send('bye'.encode())
     finally:
         conn.close()
 
